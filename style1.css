@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.cdnfonts.com/css/graphik-arts'); */
+@font-face{
+    font-family:graphikReg;
+    src:url(Fonts/GraphikRegular.otf)
+}
+@font-face{
+    font-family:graphikMed;
+    src:url(Fonts/GraphikMedium.otf)
+}
+@font-face{
+    font-family:graphikBold;
+    src:url(Fonts/GraphikBold.otf);
+}
+@font-face{
+    font-family:graphikSemi;
+    src:url(Fonts/GraphikSemibold.otf)
+}
+@font-face{
+    font-family:graphikSuper;
+    src:url(Fonts/GraphikBlack.otf)
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    /* font-family:'space grotesk', sans-serif; */
+    /* font-family: 'graphik-arts', sans-serif; */
+    font-family: graphikReg;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+/******************************************************PROMOTION BANNER STARTS HERE***********************************************/
+#promotion{
+    width:100%;
+    height:74px;
+    background-color:hsl(150, 81%, 51%); /* #1CE783 */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8); */
+}
+#promotion h4{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.32;
+    word-spacing: 1px;
+}
+#promotion span{
+    font-weight: 900;
+    font-family: graphikBold;
+    word-spacing: 0;
+    border-bottom: 1px solid hsl(0, 0%, 45%);
+}
+#promotion p{
+    font-size: 9px;
+    color: hsl(0, 0%, 25%);
+    margin-top: 4.5px;
+    letter-spacing: 0.4px;
+ }
+/******************************************************PROMOTION BANNER ENDS HERE***********************************************/
+/***************************************FRONT SECTION-HEADER + CTA OPTIONS  STARTS HERE********************************************/
+#frontSection{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("Images/hulu_movies1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: -77px 0;
+}
+#header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 85px;
+    padding-inline: 3.2rem;
+}
+#header>div{
+    width:60px;
+}
+#header>div img{
+    width:100%;
+}
+#header h1{
+    font-size: 32px;
+    font-weight:900;
+    font-family: graphikSemi;
+    color: #1CE783;
+}
+#header h2{
+    color: #A8AFBD;
+    font-family: graphikSemi;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+/* .hulu-style{
+    height:50px;
+    width:50px;
+    fill:#1ce783;
+} */
+#cta-options{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60vh;
+    left: 50%;
+}
+#cta-options .cta-bundle{
+    display:flex;
+    gap:40px;
+
+}
+.cta-bundle> div{
+    display: flex;
+    flex-direction: column;
+    gap: 29.8px;
+    width: 20rem;
+}
+.cta-bundle> div h5{
+    font-family: graphikSemi;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.6px;
+    color: hsl(150, 81%, 51%);
+    text-align: center;
+}
+.cta-bundle> div h2{
+    font-family: graphikMed;
+    font-size: 24px;
+    text-align: center;
+}
+.cta-bundle>div a{
+    font-family: graphikSemi;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    word-spacing: 1.5px;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: hsl(150, 81%, 51%);
+    border-radius: 7px;
+    color: black;
+}
+.cta-bundle .img-wrapper{
+    width: 100%;
+    text-align: center;
+}
+.cta-bundle .img-wrapper img{
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+.cta-bundle>div:last-child p{
+    font-family: graphikReg;
+    font-size: 10px;
+    margin-top: -23px;
+    text-align: center;
+}
+#cta-options .terms{
+    font-family: graphikReg;
+    font-size: 14px;
+    margin-top: 20.4px;
+    text-decoration: 1px underline #fff;
+    cursor: pointer;
+}
+#cta-options .sign-up{
+    font-family: graphikReg;
+    font-size: 16px;
+    margin-top: 23.4px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+/***************************************FRONT SECTION-HEADER + CTA OPTIONS  ENDS HERE********************************************/
+
+/******************************************************CARD SECTION STARTS HERE***********************************************/
+
+#cards-wrapper{
+    background-color: 	hsl(225, 15%, 5%);
+    color:#fff;
+}
+#cards-wrapper> div:first-child{
+    text-align:center;
+    padding-top: 5.5rem;
+    padding-bottom: 4rem;
+}
+#cards-wrapper> div:first-child h4{
+    color: hsl(150, 81%, 51%);
+    font-family: graphikMed;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.6px;
+    font-weight: lighter;
+    margin-bottom: 1.35rem;
+} 
+#cards-wrapper> div:first-child h1{
+    font-size: 48px;
+    font-weight: 900;
+    font-family: graphikSemi;
+    margin-bottom: 23.8px;
+}
+#cards-wrapper> div:first-child h3{
+    font-family: graphikReg;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.cards{
+    display: flex;
+    gap: 24px;
+    padding-inline: 120px;
+    height: 500px;
+}
+.cards .individual-card{
+    border-radius: 9px;
+    position: relative;
+}
+.cards .individual-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    height: 100%;
+    width: 100%;
+}
+.cards-img-wrapper{
+    width: 297px;
+    height: auto;
+    border-radius: 9px;
+}
+.cards-img-wrapper img{
+    width: 100%;
+    border-radius: 9px;
+    height: 100%;
+}
+.cards .cards-header{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.cards .cards-header>h3{
+    font-family: graphikMed;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.cards .cards-header>h2{
+    font-family: graphikSemi;
+    font-size: 24px;
+    margin-top:0.5rem;
+}
+/******************************************************CARD SECTION ENDS HERE***********************************************/
+/******************************************************ABOUT+LIVE SPORTS CONTAINER STARTS HERE*******************************/
+
+#about{
+    background-color: hsl(225, 15%, 5%);
+    text-align: center;
+    color: #fff;
+}
+#about>div:first-child{
+    padding: 6rem 24rem 16px;
+}
+#about>div:first-child h3{
+    color: hsl(150, 81%, 51%);
+    font-family: graphikMed;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 0.6px;
+}
+#about>div:first-child h1{
+    font-family: graphikSemi;
+    font-size: 48px;
+    margin-top: 20px;
+}
+#about>div:first-child .liveTV-description{
+    font-family: graphikReg;
+    font-size: 18px;
+    margin-block: 23.8px;
+    line-height: 1.5rem;
+}
+#about>div:first-child .liveTV-description span{
+    margin-inline:auto;
+}
+#about>div:first-child .limited-time{
+    font-family: graphikSemi;
+    font-size: 18px;
+    margin-top: 23.8px;
+    color: hsl(150, 81%, 51%);
+}
+#about>div:first-child a{
+    display: inline-block;
+    font-family: graphikSemi;
+    font-size: 14px;
+    margin-top: 14px;
+    padding: 1rem 1.4rem;
+    border-radius: 6px;
+    background-color: hsl(150, 81%, 51%);
+    color: #000;
+    letter-spacing: 0.6px;
+}
+#about .terms{
+    font-family: graphikReg;
+    font-size: 10px;
+    color: hsl(0, 0%, 60%);
+    padding-inline: 20rem;
+    margin-bottom: 1.4rem;
+}
+#about>div:nth-child(2){ 
+    padding-bottom:5rem;
+}
+#about .terms+a{
+    text-transform:uppercase;
+    font-family: graphikSemi;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    text-decoration: 1px underline;
+    color: hsl(0, 0%, 85%);
+    margin-top:16px;
+}
+#live-sports-container{
+    position:relative;
+    height:110vh;
+    width:100%;
+    background-image:url('Images/hulu_sports.jfif');
+    background-size: cover;
+    display:flex;
+    padding-left: 19%;
+    padding-top: 13%;
+}
+#live-sports-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    height: 100%;
+    width: 100%;
+}
+#live-sports-container .live-sports{
+    width:40%;
+    text-align: start;
+    z-index: 2;
+}
+#live-sports-container .live-sports-menu{
+    display:flex;
+    gap:20px;
+    font-family: graphikSemi;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #C8C8C8;
+}
+#live-sports-container .live-sports-menu>span:first-child{
+    color: #fff;
+    border-bottom: 4.5px solid #fff;
+    padding-bottom: 12px;
+}
+#live-sports-container .live-sports-content{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:45px;
+}
+#live-sports-container .brands{
+    display:flex;
+    gap:2rem;
+}
+#live-sports-container .live-sports-content h1{
+    font-family: graphikSemi;
+    font-size: 48px;
+}
+#live-sports-container .live-sports-content p{
+    font-family: graphikReg;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    word-spacing: 0.2px;
+    line-height: 23px;
+}
+#live-sports-container .live-sports-content .brands>div{
+    width: 50px;
+    height: 50px;
+    border-radius: 45px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#live-sports-container .live-sports-content .brands>div img{
+    width:90%;
+    height:auto;
+}
+#live-sports-container .live-sports-content .brands>div:nth-child(3) img{
+    width:60%;
+}
+#live-sports-container .live-sports-content .sports-terms{
+    font-family: graphikReg;
+    font-size:10px;
+    color: #C8C8C8;
+}
+#live-sports-container .live-sports-content .sports-terms>a{
+    cursor:pointer;
+    text-decoration:1px solid underline;
+    padding-left:3px;
+}
+/******************************************************ABOUT+LIVE SPORTS CONTAINER ENDS HERE*******************************/
+/*****************************************************PLAN-CONTAINER STARTS HERE*******************************************/
+#plan-container{
+    background-color: #0B0C0F;
+    height:218vh;
+    padding:70px 17% 15px;
+    color:#fff;
+}#plan-container>div:first-child{
+    text-align: center;
+    border-bottom: 1px solid #9999;
+    padding-bottom: 2.2rem;
+}
+#plan-container>div:first-child h1{
+    font-family: graphikSemi;
+    font-size: 48px;
+    letter-spacing: 0.2px;
+}
+#plan-container .div1>.hidden-fee{
+    font-family: graphikReg;
+    font-size: 18px;
+    margin-top: 23.8px;
+    font-weight: lighter;
+    word-spacing: 1px;
+    letter-spacing: 0.2px;
+}
+#plan-container .div1> .cancel-anytime{
+    margin-top: 3px;
+    font-family: graphikReg;
+    font-size: 18px;
+}
+
+#plan-container .div2{
+    display:flex;
+    gap:55px;     
+    align-items:center;
+    justify-content:center;
+    padding-block:2.2rem;
+    border-bottom: 1px solid #9999;
+}
+#plan-container .div2> .plan-switch{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.plan-switch .base-plans{
+    margin-left: 12px;
+    font-family: graphikMed;
+    font-size: 14px;
+    color: #fff;
+}
+.plan-switch .bundle{
+    font-size: 14px;
+}
+.plan-switch .plan-switch-img-wrapper1{
+    width: 100px;
+    height: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+.plan-switch .plan-switch-img-wrapper1>img{
+    width:35%;
+}
+.plan-switch .plan-switch-img-wrapper2{
+    width:40px;
+    height:auto;
+}
+.plan-switch .plan-switch-img-wrapper2>img{
+    width:100%;
+}
+.plan-switch .plan-switch-img-wrapper3{
+    width:150px;
+    height:auto;
+    margin-top:10px;
+}
+.plan-switch .plan-switch-img-wrapper3>img{
+    width:100%;
+}
+#plan-container .div2>.hulu-cta-buttons{
+    display:flex;
+    gap:24px;
+    text-align:center;
+}
+
+.hulu-cta-buttons .cta-bundle1{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.hulu-cta-buttons .cta-bundle2{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.hulu-cta-buttons .price{
+    font-family: graphikSemi;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    color: #040405;
+    background-color: #fff;
+    padding: 0.9rem 5rem;
+    border-radius: 7px;
+}
+.hulu-cta-buttons .cta-bundle1>a:first-child{
+    font-family: graphikMed;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #16181D;
+    background-color: hsl(150, 81%, 51%);
+    padding: 10px 15px;
+    width: 140px;
+    border-radius: 20px;
+    align-self: center;
+}
+.hulu-cta-buttons .cta-bundle2> a:first-child{
+    visibility: hidden;
+    font-family: graphikMed;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #16181D;
+    background-color: hsl(150, 81%, 51%);
+    padding: 10px 15px;
+    width: 140px;
+    border-radius: 20px;
+    align-self: center;
+}
+/* #plan-container .div3{
+    display:flex;
+    gap:25rem;
+    align-items:center;
+    justify-content:flex-start;
+    padding-block: 1.9rem;
+    font-family: graphikReg;
+    font-size: 14px;
+    border-bottom: 1px solid #9999
+}
+#plan-container .div3>div:last-child{
+    display:flex;
+    gap:14rem;
+    align-items:center;
+    justify-content:center;
+} */
+.price-table{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.price-table>div{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    border-bottom: 1px solid #9999;
+    padding-block: 1.8rem;
+    font-family: graphikReg;
+    font-size: 14px;
+}
+.price-table div>p[class="checked"]{
+    font-size: 20px;
+    color: hsl(150, 81%, 51%);
+    font-weight: 900;
+}
+.price-table div>p:last-child{
+    justify-self: center;
+}
+
+#plan-container .show-add-ons{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    padding-block: 1rem;
+    border-bottom: 1px solid #9999;
+}
+#plan-container .show-add-ons .down-arrow-wrapper{
+    width:75px;
+}
+#plan-container .show-add-ons .down-arrow-wrapper>img{
+    width:38%;
+} 
+.price-table .conditions>p{
+    font-family: graphikReg;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+    align-self: start;
+    padding-top: 0px;
+    padding-bottom:3.8rem;
+    padding-left: 15px;
+    width:100%;
+}
+/*****************************************************PLAN-CONTAINER ENDS HERE*******************************************/
+/*****************************************************FOOTER STARTS HERE*******************************************/
+footer{
+    height:70vh;
+    width:100%;
+    background-color: hsl(216, 12%, 92%);
+}
+footer .menu-items{
+    display:flex;
+    gap:4rem;
+    padding:4rem 10rem 2rem;
+}
+footer .menu-single-column{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+footer .menu-single-column>h6{
+    font-family:graphikReg;
+    font-size:14px;
+    color:hsl(221, 14%, 55%);
+    font-weight:lighter;
+    white-space:nowrap;
+}
+footer .menu-single-column h4{
+    font-family: graphikMed;
+    color: #272C34;
+    letter-spacing: 0.4px;
+    font-size: 12px;
+    font-weight: 400;
+}
+footer .menu-single-column h4[class="invisible"]{
+    visibility:hidden;
+}
+footer .footer-line{
+    height:1px;
+    background-color:hsl(221, 14%, 55%);
+    margin-inline: 10rem;
+    margin-top: 4rem;
+}
+.social-media{
+    display:flex;
+    gap: 1.7rem;
+    padding-block: 3rem;
+    margin-inline: 10rem;
+    font-size: 22px;
+    color: hsl(221, 14%, 43%);
+    padding-left: 5px;
+}
+footer .copyright{
+    display:flex;
+    gap:25px;
+    align-items:center;
+    color:hsl(221, 14%, 57%);
+    padding-top:0.4rem;
+    width:100%;
+    white-space:nowrap;
+    font-size: 12px;
+    padding-inline: 11rem;
+    white-space: nowrap;
+    font-family: graphikReg;
+    letter-spacing: 0.2px;
+}
+footer .copyright>.about-ads-wrapper{
+    display: flex;
+    align-items:center;
+    gap:2px;
+    width:75px;
+}
+
+footer .copyright>.about-ads-wrapper>img{
+    width:100%;
+}
+/*****************************************************FOOTER ENDS HERE*******************************************/
+
